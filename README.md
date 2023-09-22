@@ -13,3 +13,11 @@ I started with initiatlizing a dbt project in the `/elt` folder. First, I tried 
 I then continued working with dbt models without orchestrating them with prefect to see if they worked. I don't have an intermedia stage, only a staging and mart. I only load all columns with prices/fares/fees into the staging table using `stg_green_taxi.sql`. I then proceed with `fct_daily_revenue.sql` where I group the table by day and calculate the sums for each day and save it as a table called `fct_daily_revenue`.
 
 Lastly, I orchestrated all steps using prefect with a single script called `pipeline_elt.py`.
+
+# WHAT CHALLENGES DID I ENCOUNTER?
+
+I tried loading the source data for the ELT pipeline via dbt directly from GCS and then upload it to my postgres database. Didn't work.
+
+# WHAT WOULD I DO IF I HAD MORE TIME?
+
+Take more time to think about what columns might be useful to keep in the report. Also I just grouped them by day and didn't really calculate the revenue.
