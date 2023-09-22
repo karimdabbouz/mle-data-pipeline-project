@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: src_green_taxi
+    schema: public
+    tables:
+      - name: source_data
