@@ -1,0 +1,54 @@
+###
+### A complete description of a Prefect Deployment for flow 'ELT Pipeline Flow'
+###
+name: ELT Pipeline
+description: null
+version: a0d21ffbfa023441dc8766e55c110753
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: default-agent-pool
+tags: []
+parameters:
+  bucket: mle-batch-and-stream-processing-bucket
+  key_path: ./service_account_key.json
+schedule: null
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: ELT Pipeline Flow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: befff481-ccea-4ea8-9929-9719aa72fda5
+  _block_document_name: anonymous-00f4b33a-4a3d-4793-8b82-116b3715f0fb
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /home/karim/pCloud/neuefische/code/mle-data-pipeline-project/elt
+entrypoint: pipeline_elt.py:elt_pipeline_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    bucket:
+      title: bucket
+      position: 0
+    key_path:
+      title: key_path
+      position: 1
+  required:
+  - bucket
+  - key_path
+  definitions: null
+timestamp: '2023-09-22T10:01:21.481123+00:00'
+triggers: []
