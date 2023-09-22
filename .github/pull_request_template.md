@@ -2,9 +2,9 @@
 
 <!-- If you are done with a topic mark the checkboxes with an `x` (like `[x]`) -->
 
-- [ ] I read and understood the tasks.
-- [ ] I created a script that loads the data.
-- [ ] I updated the script to upload the data to GCS.
+- [x] I read and understood the tasks.
+- [x] I created a script that loads the data.
+- [x] I updated the script to upload the data to GCS.
 - [ ] I extract the data from the GCS.
 - [ ] ETL:
     - [ ] I created a script that is processing the data.
